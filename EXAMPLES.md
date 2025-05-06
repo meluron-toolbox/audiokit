@@ -10,20 +10,20 @@ Convert MusicXML files to WAV audio using MuseScore.
 
 ```bash
 # Convert a single MusicXML file to WAV
-python xmlToWav.py path/to/score.xml output/directory/
+python renderXMLs.py path/to/score.xml output/directory/
 ```
 
 ### Batch Conversion
 
 ```bash
 # Convert all XML files in a directory
-python xmlToWav.py path/to/xml/directory/ output/directory/
+python renderXMLs.py path/to/xml/directory/ output/directory/
 ```
 
 ### Using in Python Code
 
 ```python
-from xmlToWav import renderXMLs
+from renderXMLs import renderXMLs
 
 # Convert a single file
 renderXMLs("path/to/score.xml", "output/directory/")
