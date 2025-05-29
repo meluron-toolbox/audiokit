@@ -2,7 +2,7 @@
 
 This document provides examples of how to use each utility in the Audio Kit repository.
 
-## render_xmls.py
+## > render_xmls.py
 
 Convert MusicXML files to WAV audio using MuseScore.
 
@@ -38,7 +38,7 @@ render_xmls("path/to/xml/directory/", "output/directory/")
 - Progress is shown with dots (.) for each file processed
 - The output directory will be created if it doesn't exist
 
-## create_playlist.py
+## > create_playlist.py
 
 Create a playlist while listening to songs. The songs skipped are moved from the original directory to skipped_songs directory (in the root folder level)
 
