@@ -10,26 +10,26 @@ Convert MusicXML files to WAV audio using MuseScore.
 
 ```bash
 # Convert a single MusicXML file to WAV
-python render\_xmls.py path/to/score.xml output/directory/
+python render_xmls.py path/to/score.xml output/directory/
 ```
 
 ### Batch Conversion
 
 ```bash
 # Convert all XML files in a directory
-python render\_xmls.py path/to/xml/directory/ output/directory/
+python render_xmls.py path/to/xml/directory/ output/directory/
 ```
 
 ### Using in Python Code
 
 ```python
-from render\_xmls import render\_xmls
+from render_xmls import render_xmls
 
 # Convert a single file
-render\_xmls("path/to/score.xml", "output/directory/")
+render_xmls("path/to/score.xml", "output/directory/")
 
 # Convert all files in a directory
-render\_xmls("path/to/xml/directory/", "output/directory/")
+render_xmls("path/to/xml/directory/", "output/directory/")
 ```
 
 ### Notes
@@ -40,11 +40,9 @@ render\_xmls("path/to/xml/directory/", "output/directory/")
 
 ## create_playlist.py
 
-Create a playlist while listening to songs.
-
-### Single File Conversion
+Create a playlist while listening to songs. The songs skipped are moved from the original directory to skipped_songs directory (in the root folder level)
 
 ```bash
 # Create a playlist
-python create\_playlist.py path/to/audio\_directory/
+python create_playlist.py path/to/audio_directory/
 ```
